@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>product</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="logo3.png" class="logo" height="70px"></a>
+        <div>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+           <img src="nike1.jpg" width="100%" id="mainimg" alt="">
+           <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="nike1.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="nike1b.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="nike1c.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="nike1d.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+           </div> 
+        </div>
+
+        <div class="single-pro-details">
+
+        </div>
+    
+    <div class="single-pro-details">
+        <h5>Shoes /Nike</h5>
+        <h4>Nike Dunk Low Retro SE</h4>
+        <h2>₹9,207
+            incl. of taxes
+        </h2>
+    
+        <select>
+            <option>Select Size</option>
+            <option>UK 6.5</option>
+            <option>UK 7</option>
+            <option>UK 7.7</option>
+            <option>UK 10</option>
+        </select>
+        </br>
+        <input type="number" value="1">
+        <button class="normal">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span>Stay sharp in the '80s b-ball icon cleaned up for the streets. Its side fade motif and classic red, white and 
+              blue piping celebrate those trusted barbershops that keep you looking good. The padded, low-cut collar lets
+              you take your signature style anywhere—in comfort.</br>
+              <br>Colour Shown: Black/White/Chile Red/Copa
+        </br>Style: DH7614-001</span>
+    </div>
+    </section>S
+
+    <script>
+        var mainimg=document.getElementById("mainimg");
+        var smallimg=document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            mainimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            mainimg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            mainimg.src = smallimg[3].src;
+        }
+        
+    </script>
+  
+    <script>script.js</script>
+</body>
+
+</html>    

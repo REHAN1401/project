@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding: 0;
@@ -51,9 +52,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80 px;
+    padding: 20px 80px;
     background-color: #e3e3e3;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.06)
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
 }
 
 #navbar{
@@ -107,3 +112,286 @@ body{
     text-decoration: none;
     color: #1a1a1a;
 }
+
+
+/* product */
+#product1 .pro-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    
+}
+
+#product1 .pro{
+    width: 20%;
+    min-width: 200px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin:  15px;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .desc{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .desc span{
+    color: #606063;
+    font-size: 15px;
+}
+
+#product1 .pro .desc h5{
+    padding: 0px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+#product1 .pro .desc i{
+    font-size: 12px;
+    color: rgb(244, 230, 32);
+}
+
+#product1 .pro .desc h4{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+#product1 .pro .cart{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    border: 1px solid #cce7d0;
+
+}
+
+#page{
+    text-align: center;
+}
+#page a{
+    text-decoration: none;
+    background-color:#088178 ;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;;
+    font-weight: 600;
+}
+
+#page a i{
+
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 80px;      
+}
+
+/* single product */
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details h4{
+   
+    padding: 40px 0 20px 0
+}
+
+#prodetails .single-pro-details h2{
+   font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+   
+    display: block0;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color:#fff ;  
+    display: inline-block;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    border: 4px double #088178;
+    border-radius: 10px;
+  
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+/* cart page */
+
+#cart table{
+    width:  100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 80px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 7px 5px 13px;
+}
+
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td{
+    padding-top: 15PX;
+}
+
+#cart table tbody td{
+    font-size: 15PX;
+}
+
+.normal{
+    background-color: #088178;
+    color:#fff ;  
+    display: inline-block;
+    padding: 12px;
+    width: 130px;
+    text-align: center;
+    border: 4px double #088178;
+    border-radius: 10px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cupon{
+    width: 50%;
+    margin-bottom: 30px;   
+}
+
+#cupon h3,
+#subtotal h3{
+    padding-bottom: 15px;
+}
+
+#cupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#cupon button{
+    padding: 12px 20px;
+}
+
+#subtotal{
+    width: 500px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 20px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+
+ 

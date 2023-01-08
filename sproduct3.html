@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>product</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="logo3.png" class="logo" height="70px"></a>
+        <div>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+           <img src="ads2a.jpg" width="100%" id="mainimg" alt="">
+           <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="ads2a.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="ads2b.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="ads2c.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="ads2d.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+           </div> 
+        </div>
+
+        <div class="single-pro-details">
+
+        </div>
+    
+    <div class="single-pro-details">
+        <h5>Shoes /Adidas</h5>
+        <h4>
+            Uptempo '96</h4>
+        <h2>₹15,995
+            incl. of taxes
+        </h2>
+    
+        <select>
+            <option>Select Size</option>
+            <option>UK 6.5</option>
+            <option>UK 7</option>
+            <option>UK 7.7</option>
+            <option>UK 10</option>
+        </select>
+        </br>
+        <input type="number" value="1">
+        <button class="normal">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span>How do you make an icon even better? Unleash its wild side. A medley of animal
+             prints lends new energy and power to the Nike Air More Uptempo '96, while Max Air units in the forefoot, midfoot and<br> heel give you unmistakable cushioning. With its distinctive '90s graffiti-style branding, there's <br>no way you'll blend into the crowd with these kicks.<br>
+
+        <br>  Colour Shown: Summit White/Black/White/University Red
+         </br>   Style: DZ4838-100</span>
+    </div>
+    </section>
+
+    <script>
+        var mainimg=document.getElementById("mainimg");
+        var smallimg=document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            mainimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            mainimg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            mainimg.src = smallimg[3].src;
+        }
+        
+    </script>
+  
+    <script>script.js</script>
+</body>
+
+</html>    

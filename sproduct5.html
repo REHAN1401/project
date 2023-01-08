@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>product</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="logo3.png" class="logo" height="70px"></a>
+        <div>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+           <img src="nike3.jpg" width="100%" id="mainimg" alt="">
+           <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="nike3.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="nike3b.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="nike3c.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="nike3d.jpg" alt="" width="100%" class="small-img" alt="">
+            </div>
+           </div> 
+        </div>
+
+        <div class="single-pro-details">
+
+        </div>
+    
+    <div class="single-pro-details">
+        <h5>Shoes /Gucci</h5>
+        <h4>Zoom Alphafly NEXT%</h4>
+        <h2>₹25,665
+            incl. of taxes
+        </h2>
+    
+        <select>
+            <option>Select Size</option>
+            <option>UK 6.5</option>
+            <option>UK 7</option>
+            <option>UK 7.7</option>
+            <option>UK 10</option>
+        </select>
+        </br>
+        <input type="number" value="1">
+        <button class="normal">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span>Once you take a few strides in the Nike Air Zoom Alphafly NEXT% 2, you'll
+             never look at your favourite pair of old racing shoes in the same way again.<br>
+             These rocket ships are made to help shave precious time off your personal 
+             records without surrendering the foundation you need to go the full distance.
+             A thick, lightweight support system brings comfort and speed together so you<br>
+              can enjoy our greatest energy return while you chase your personal bests.<br>
+
+          <br>  Colour Shown: Scream Green/Bright Crimson/Honeydew/Black
+          <br>  Style: DZ4784-304</span>
+    </div>
+    </section>S
+
+    <script>
+        var mainimg=document.getElementById("mainimg");
+        var smallimg=document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            mainimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            mainimg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            mainimg.src = smallimg[3].src;
+        }
+        
+    </script>
+  
+    <script>script.js</script>
+</body>
+
+</html>    
